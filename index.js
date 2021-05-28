@@ -2,7 +2,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./generateMarkdown.js');
-generateMarkdown('testing');
+generateMarkdown('Practice');
 // TODO: Create an array of questions for user input
 const questions = [
     {
@@ -50,15 +50,15 @@ const questions = [
         message:  'What is your email address?',
         name: 'Email',
     },
-];
+]
  
 function writeToFile(fileName, data) {
 
 const { Title, Description, Installation, UsageInfo, Contribution, Test, License, Github, Email } = data
+console.log(data)
 
-`    
-# Title 
-${Title}
+let README=
+`${Title}
 
 ![${License}](https://img.shields.io/badge/license-${License}-blue)
 
@@ -83,16 +83,12 @@ ${Test}
 ####### License
 This project is licensed under the ${License} license.
 ####### Questions
-If you have any questions, you can contactly me directly at ${Email}. View my other works at [${Github}](https://github.com${gitUsername})
-`    
+If you have any questions, you can contactly me directly at ${Email}. View my other works at [${Github}]`    
 
-    fs.writeFile(fileName, data, function(error) {       
-        console.log('data: ', data)
-        if(error) {
-            return console.log(error)
+    fs.writeFile(fileName, README, (err) => err ? 
+      console.log(err) :
+        console.log('created file'))
         }
-    })
-}
 
 function init() {
     inquirer.prompt(questions)
