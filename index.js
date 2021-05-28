@@ -1,26 +1,29 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-
+const util = require('util');
+const generateMarkdown = require('./generateMarkdown.js')
 // TODO: Create an array of questions for user input
 const questions = ['What is the title of of this project?', 'Write a brief but thorough description of your project.', 'List the steps required for installing your project.', 'Provide examples of your project with guidance on how to use it.', 'Provide instruction on how developers can contribute to this project.', 'Please explain and prove examples on how to run any tests that were written for your project.', 'Choose a license for your project.', 'What is your Github username?', 'What is your email address?'];
 
-inquirer
-.prompt([
+
+
+const promptUser = () => {
+    return inquirer.prompt([
     {
         type: 'input',
         message: questions[0],
-        name: 'title',
+        name: 'Title',
     },
     {
         type: 'input',
         message: questions[1],
-        name: 'description',
+        name: 'Description',
     },
     {
         type: 'input',
         message: questions[2],
-        name: 'installation',
+        name: 'Installation',
     },
     {
         type: 'input',
@@ -35,12 +38,12 @@ inquirer
     {
         type: 'input',
         message: questions[5],
-        name: 'test',
+        name: 'Test',
     },
     {
         type: 'input',
         message: questions[6],
-        name: 'license',
+        name: 'License',
     },
     {
         type: 'input',
@@ -50,15 +53,42 @@ inquirer
     {
         type: 'input',
         message: questions[8],
-        name: 'email',
+        name: 'Email',
     },
 ])
+.then((answers) => {
+    console.log(answers)
+})
+}
+   
+ 
+    fs.writeFile('README.MD',
 
-// TODO: Create a function to write README file
+`    
+
+# Title 
+${answers.title}
+## Description
+${answers.Description}
+### Installation
+${answers.Installation}
+#### UsageInfo
+${answers.UsageInfo}
+##### Contribution guidelines
+${answers.Contribution}
+###### Tests
+${answers.Test}
+####### License
+${answers.license}
+######## Github username
+${answers.Github}
+######### Email
+${answers.Email}
+`
+    )
+
 function writeToFile(fileName, data) {}
 
-// TODO: Create a function to initialize app
 function init() {}
 
-// Function call to initialize app
 init();
