@@ -7,7 +7,51 @@ const questions = ['What is the title of of this project?', 'Write a brief but t
 
 inquirer
 .prompt([
-
+    {
+        type: 'input',
+        message: questions[0],
+        name: 'title',
+    },
+    {
+        type: 'input',
+        message: questions[1],
+        name: 'description',
+    },
+    {
+        type: 'input',
+        message: questions[2],
+        name: 'installation',
+    },
+    {
+        type: 'input',
+        message: questions[3],
+        name: 'UsageInfo',
+    },
+    {
+        type: 'input',
+        message: questions[4],
+        name: 'Contribution',
+    },
+    {
+        type: 'input',
+        message: questions[5],
+        name: 'test',
+    },
+    {
+        type: 'input',
+        message: questions[6],
+        name: 'license',
+    },
+    {
+        type: 'input',
+        message: questions[7],
+        name: 'Github',
+    },
+    {
+        type: 'input',
+        message: questions[8],
+        name: 'email',
+    },
 ])
 
 // TODO: Create a function to write README file
