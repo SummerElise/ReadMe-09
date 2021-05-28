@@ -58,9 +58,10 @@ const { Title, Description, Installation, UsageInfo, Contribution, Test, License
 console.log(data)
 
 let README=
-`${Title}
+`# Title
+${Title}
 
-![${License}](https://img.shields.io/badge/license-${License}-blue)
+![${License}](https://img.shields.io/badge/license-(${License})-blue)
 
 ## Description
 ${Description}
@@ -81,9 +82,9 @@ ${Contribution}
 ##### Tests
 ${Test}
 ##### License
-This project is licensed under the ${License} license.
+This project is licensed under the (${License}) license.
 ##### Questions
-If you have any questions, you can contactly me directly at ${Email}. View my other works at [${Github}]`    
+If you have any questions, you can contactly me directly at( ${Email} ) . View my other works at [${Github}]`    
 
     fs.writeFile(fileName, README, (err) => err ? 
       console.log(err) :
