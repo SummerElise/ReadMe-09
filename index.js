@@ -66,11 +66,11 @@ let README=
 ${Description}
  ## Table of Contents
 
- *[Installation](##Installation)
- *[UsageInfo](##UsageInfo)
- *[Contribution](##Contribution)
- *[Test](##Tests)
- *[Questions](##Questions)
+ * [Installation](##Installation)
+ * [UsageInfo](##UsageInfo)
+ * [Contribution](##Contribution)
+ * [Test](##Tests)
+ * [Questions](##Questions)
 
 ### Installation
 ${Installation}
@@ -78,11 +78,11 @@ ${Installation}
 ${UsageInfo}
 ##### Contribution guidelines
 ${Contribution}
-###### Tests
+##### Tests
 ${Test}
-####### License
+##### License
 This project is licensed under the ${License} license.
-####### Questions
+##### Questions
 If you have any questions, you can contactly me directly at ${Email}. View my other works at [${Github}]`    
 
     fs.writeFile(fileName, README, (err) => err ? 
@@ -94,7 +94,7 @@ function init() {
     inquirer.prompt(questions)
     .then((answers) => {
         console.log(answers)
-        writeToFile("README.md", answers)     
+        writeToFile("Project-README.md", answers)     
     });
 }
 
