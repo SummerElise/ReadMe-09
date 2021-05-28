@@ -31,6 +31,8 @@ THEN I am taken to the corresponding section of the README
 ```
 You can find the repository to this asssignment here: https://github.com/SummerElise/ReadMe-09
 
+Link to the walkthrough video:
+
 https://drive.google.com/file/d/1qRCS860w7seZWfrTyBBluh-hBpnJ9_z3/preview
 
 #### Contributing
