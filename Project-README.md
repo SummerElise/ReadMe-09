@@ -1,9 +1,10 @@
-Project here
+# Title
+Project title here
 
-![License here](https://img.shields.io/badge/license-License here-blue)
+![License here](https://img.shields.io/badge/license-(License here)-blue)
 
 ## Description
-Description here
+Description of Project here
  ## Table of Contents
 
  * [Installation](##Installation)
@@ -13,14 +14,14 @@ Description here
  * [Questions](##Questions)
 
 ### Installation
-Installation here
+Steps for Installation here
 #### UsageInfo
-UsageInfo
+User Info here
 ##### Contribution guidelines
 Contributions here
 ##### Tests
-Test here
+Tests here
 ##### License
-This project is licensed under the License here license.
+This project is licensed under the (License here) license.
 ##### Questions
-If you have any questions, you can contactly me directly at Email here. View my other works at [Github username here]
+If you have any questions, you can contactly me directly at( Email here ) . View my other works at [Github username here]
