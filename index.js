@@ -61,7 +61,7 @@ let README=
 `# Title
 ${Title}
 
-![${License}](https://img.shields.io/badge/license-(${License})-blue)
+![${License}](https://img.shields.io/badge/license-${License}-blue)
 
 ## Description
 ${Description}
