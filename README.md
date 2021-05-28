@@ -33,7 +33,7 @@ You can find the repository to this asssignment here: https://github.com/SummerE
 
 Link to the walkthrough video:
 
-https://drive.google.com/file/d/1qRCS860w7seZWfrTyBBluh-hBpnJ9_z3/preview
+https://drive.google.com/file/d/1wDqC2cqN_wn033rVvmbdNRP_HNAg6NHa/view
 
 #### Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
