@@ -1,6 +1,6 @@
 # README GENERATOR
 This week's assignment required me to create a README generator with Node.js.
-A brief video clip is provided below to show the function. An example of the end result cam be found in the "Project-README.md" file. The following requirements are to be met based off the given scenario:
+A brief video clip is provided below to show the user flow while navigating this application. An example of the end result cam be found in the "Project-README.md" file. The following requirements are to be met based off the given scenario:
 
 ## User Story
 
@@ -31,7 +31,7 @@ THEN I am taken to the corresponding section of the README
 ```
 You can find the repository to this asssignment here: https://github.com/SummerElise/ReadMe-09
 
-
+<iframe src="https://drive.google.com/file/d/1qRCS860w7seZWfrTyBBluh-hBpnJ9_z3/preview" width="640" height="480"></iframe>
 
 #### Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
